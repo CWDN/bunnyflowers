@@ -1,0 +1,260 @@
+body{
+    background:url(../images/minecraftbg.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    width:100%;
+    height: 100%;
+    background: url(../images/logo.png) no-repeat;
+    background-position: center 30%;
+    z-index: 0;
+}
+.home-header-wrapper{
+    z-index: 1;
+    position: absolute;
+    top:50%;
+    left:0%;
+    width:100%;
+    padding:0px;
+}
+.home-header{
+    list-style: none;
+    margin:0 auto;
+    display: table;
+    padding:0;
+}
+.home-header li{
+    float:left;
+    margin:0px 10px;
+}
+.home-header i{
+    margin-right: 10px;
+}
+li a{
+    text-decoration: none;
+    color:#fff;
+    font-size:1.5em;
+    font-weight:300;
+    padding: 20px;
+    cursor: pointer;
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0px #000;
+    cursor: pointer;
+}
+.blue-hover{
+    background-color:#333;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+
+}
+.blue-hover:hover{
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color:#5db4fe;
+}
+.wrapper{
+    margin:0 auto;
+    width:1200px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+}
+.mcheader{
+    width:100%;
+    margin:20px 0px;
+}
+.mcheader ul{
+    list-style: none;
+    display: table;
+    margin:0;
+    padding:0;
+    margin-bottom: 10px;
+}
+.mcheader li{
+    float:left;
+    margin:0px 10px;
+}
+.mcheader li a{
+    font-size:1.3em;
+    padding:10px;
+    box-shadow: 0px 0px 10px 0px #444;
+}
+.mcheader i{
+    margin-right:5px;
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+.tutorialItem{
+    float:left;
+    text-align: center;
+    display: inline-block;
+    padding: 0px 20px;
+    width: 190px;
+    margin-bottom: 130px;
+}
+.tutorialItem a{
+    display: block;
+    padding:20px;
+    color:#fff;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px 2px #222;
+    border-radius: 7px;
+    position: relative;
+}
+.tutorialItem h3{
+    margin-bottom: 0;
+}
+.tutorialItem img{
+    border-radius: 5px;
+    height: 150px;
+}
+.tutorialItem p{
+    margin:0;
+}
+.tutorialItem .desc{
+    margin-top:10px;
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+    z-index: 1;
+}
+.tutorialItem a:hover > .desc{
+    display: block;
+}
+.sidenav{
+    width:175px;
+    float:left;
+    margin-left: 10px;
+}
+.sidenav ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.sidenav li a{
+    color:#fff;
+    font-size:1em;
+    box-shadow: 0px 0px 0px 0px #fff;
+    padding:12px 10px;
+    font-weight: 400;
+    background-color:#333;
+    border-radius: 0;
+    border-bottom:1px solid #777;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+.sidenav li a:hover{
+    background-color:#666;
+    border-bottom:1px solid #aaa;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+.steps{
+    margin:0 auto;
+    width:600px;
+}
+.step img{
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.step h3{
+    font-size: 1.6em;
+    color:#fff;
+    width:100%;
+    box-sizing: border-box;
+    padding:10px;
+    background-color:#333;
+    border-radius: 3px;
+}
+.step p{
+    color:#fff;
+}
+.step .anchor{
+    display: block;
+    position: relative;
+    top: -30px;
+    visibility: hidden;
+}
+.step span{
+    font-weight: bolder;
+    color:#5db4fe;
+}
+.step table{
+    background-color:#333;
+    color:#fff;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.step td{
+    padding:3px;
+}
+.step h4{
+    color:#fff;
+    width:100%;
+    box-sizing: border-box;
+    padding:10px;
+    background-color:#333;
+    border-radius: 3px;
+}
+.step .moreinfo{
+    text-decoration: none;
+    text-align: center;
+}
+.step .header{
+    font-size: 1.2em;
+    margin:3px 0px;
+}
+.box{
+    width:100%;
+    box-sizing: border-box;
+    padding:10px;
+    background-color:#333;
+    border-radius: 3px;
+}
+
+.step .ability h4{
+    color:#fff;
+    width:100%;
+    box-sizing: border-box;
+    background-color:#333;
+    border-radius: 3px;
+    margin:4px 0px;
+    font-size:1.1em;
+    padding:0px;
+}
+.step .ability h5{
+    text-align: center;
+    font-size: 1.1em;
+    margin:2px 0px;
+    color:#5db4fe;
+}
+.step .ability a{
+    text-decoration: none;
+    color:#b23939;
+    margin:5px 0px;
+    font-weight: 900;
+    text-align: center;
+    display: block;
+
+}
+.step .ability p{
+    border-bottom: 1px #555 solid;
+    padding-bottom: 12px;
+}
+
+@media all and (max-width: 1200px){
+    .wrapper{
+        width:100%;
+    }
+}
