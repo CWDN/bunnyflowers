@@ -4,11 +4,11 @@ class MinecraftController extends BaseController {
 
 	public function index()
 	{
-		return View::make('minecraft');
+		return View::make('minecraft.minecraft');
 	}
     public function tutorial()
     {
-        return View::make('tutorial');
+        return View::make('minecraft.tutorial');
     }
 
     public function tutorials($tutorial)
@@ -18,11 +18,11 @@ class MinecraftController extends BaseController {
             if($tutorial == "all"){
                 return View::make('tutorial');
             }
-            if(View::exists('tutorials.' . $tutorial)){
-                return View::make('tutorials.' . $tutorial);
+            if(View::exists('minecraft.tutorials.' . $tutorial)){
+                return View::make('minecraft.tutorials.' . $tutorial);
             }
         }
-        return View::make('tutorial');
+        return View::make('minecraft.tutorial');
     }
 
 }
