@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'MinecraftController@index');
+Route::get('/', 'HomeController@index');
 Route::get('mc', 'MinecraftController@index');
 Route::get('mc/tutorials', 'MinecraftController@tutorial');
 Route::get('mc/tutorials/{tutorial}', 'MinecraftController@tutorials');
