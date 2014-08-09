@@ -10,8 +10,8 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
-Route::get('/', 'HomeController@index');
+Route::get('/development', 'HomeController@index');
+Route::get('/', 'MinecraftController@index');
 Route::get('mc', 'MinecraftController@index');
 Route::get('mc/tutorials', 'MinecraftController@tutorial');
 Route::get('mc/tutorials/{tutorial}', 'MinecraftController@tutorials');

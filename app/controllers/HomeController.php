@@ -10,7 +10,7 @@ class HomeController extends BaseController {
     }
 
     function GetGmodServerData(){
-        require app_path() . '/libs/SourceQuery/SourceQuery.class.php';
+        /*require app_path() . '/libs/SourceQuery/SourceQuery.class.php';*/
 
         // Edit this ->
         define( 'SQ_SERVER_ADDR', '5.101.136.131' );
@@ -35,7 +35,7 @@ class HomeController extends BaseController {
     }
 
     function GetMinecraftServerData(){
-        require app_path() . '/libs/MinecraftQuery/MinecraftQuery.class.php';
+        /*require app_path() . '/libs/MinecraftQuery/MinecraftQuery.class.php';*/
 
         $Query = new MinecraftQuery();
 
