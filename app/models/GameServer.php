@@ -35,11 +35,14 @@ class GameServer{
         try
         {
             $Query->Connect(MC_SERVER_ADDR, MC_SERVER_PORT);
-            $players;
-            foreach($Query->GetPlayers() as $player){
-                $pl = new Player();
-                $pl->setName($player);
-                $players[] = $pl;
+            $players = array();
+            $pls = $Query->GetPlayers();
+            if($pls){
+                foreach($pls as $player){
+                    $pl = new Player();
+                    $pl->setName($player);
+                    $players[] = $pl;
+                }
             }
             
             $info = $Query->GetInfo();
