@@ -6,10 +6,26 @@
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div class="carousel"></div>
+        <div class="carousel">
+            <?php 
+                
+                foreach ($serverdata as $key => $server){
+                    $info = $server->Info;?>
+                    <div class="background" style="background-image:url({{asset($info->Background)}})"></div>
+                <?php
+                }
+            ?>
+        
+        </div>
         <div class="serverInfo">
-            @include('partials.serverstats', array('title' => 'Minecraft', 'playerNum' => $serverdata['Minecraft']['Info']['Players'], 'maxPlayers' => $serverdata['Minecraft']['Info']['MaxPlayers']))
-            @include('partials.serverstats', array('title' => 'Garry\'s Mod', 'playerNum' => $serverdata['Gmod']['Info']['Players'], 'maxPlayers' => $serverdata['Gmod']['Info']['MaxPlayers']))
+            <?php 
+                
+                foreach ($serverdata as $key => $server){
+                    $info = $server->Info;?>
+                    @include('partials.serverstats', array('title' => $key, 'data' => $info))
+                <?php
+                }
+            ?>
         </div>
     </body>
 

@@ -8,6 +8,7 @@
     width:100%;
     background-color: #1f1f1f;
     box-shadow: inset 0px 0px 15px 3px #111;
+    display: table;
 }
 body{
     padding:0px;
@@ -23,6 +24,7 @@ body{
 }
 .server-stats h1{
    font-weight: 400;
+    margin:10px 0px 5px 0px;
 }
 .server-stats h2{
     font-weight: 300;
@@ -30,4 +32,30 @@ body{
 }
 .server-stats path{
     box-shadow: 0px 0px 10px 0px #111;
+}
+.server-stats h3{
+    margin:0;
+    font-weight: 100;
+}
+.server-stats a{
+    color:#fff;
+    font-size: 1.5em;
+    background-color:#666;
+    padding:4px;
+    border-radius: 5px;
+    margin:10px;
+    display: block;
+    width:100px;
+    margin-left:auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 0px #111;
+    text-decoration: none;
+}
+.carousel .background{
+    width:50%;
+    box-sizing: border-box;
+    height:100%;
+    float:left;
+    background-size: cover;
+    background-position: center center;
 }

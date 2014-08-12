@@ -12,6 +12,6 @@
 */
 Route::get('/development', 'HomeController@index');
 Route::get('/', 'MinecraftController@index');
-Route::get('mc', 'MinecraftController@index');
-Route::get('mc/tutorials', 'MinecraftController@tutorial');
-Route::get('mc/tutorials/{tutorial}', 'MinecraftController@tutorials');
+Route::get('minecraft', 'MinecraftController@index');
+Route::get('minecraft/tutorials', 'MinecraftController@tutorial');
+Route::get('minecraft/tutorials/{tutorial}', 'MinecraftController@tutorials');

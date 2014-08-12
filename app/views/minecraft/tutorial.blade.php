@@ -1,10 +1,10 @@
 @extends('layouts.minecraft-tutorials')
 @section('header-options')
-<li><a class="blue-hover" href="/mc"><i class="fa fa-home"></i>Home</a></li>
+<li><a class="blue-hover" href="/minecraft"><i class="fa fa-home"></i>Home</a></li>
 @stop
 @section('content')
     <div class="tutorialItem">
-        <a class="blue-hover" href="/mc/tutorials/landlord">
+        <a class="blue-hover" href="/minecraft/tutorials/landlord">
             <img src="{{asset('images/plugin-logos/landlord.png')}}">
             <h3>Landlord</h3>
             <p>Protection</p>
@@ -12,7 +12,7 @@
         </a>
     </div>
     <div class="tutorialItem">
-        <a class="blue-hover" href="/mc/tutorials/mcMMO">
+        <a class="blue-hover" href="/minecraft/tutorials/mcMMO">
             <img src="{{asset('images/plugin-logos/mcMMO.png')}}">
             <h3>mcMMO</h3>
             <p>RPG & Abilities</p>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="tutorialItem">
-        <a class="blue-hover" href="/mc/tutorials/trading">
+        <a class="blue-hover" href="/minecraft/tutorials/trading">
             <img src="{{asset('images/plugin-logos/trading.png')}}">
             <h3>Trading</h3>
             <p>Trading</p>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="tutorialItem">
-        <a class="blue-hover" href="/mc/tutorials/essentials">
+        <a class="blue-hover" href="/minecraft/tutorials/essentials">
             <img src="{{asset('images/plugin-logos/essentials.png')}}">
             <h3>Essentials</h3>
             <p>Utilities & Tools</p>
@@ -38,7 +38,7 @@
     </div>
 
     <div class="tutorialItem">
-        <a class="blue-hover" href="/mc/tutorials/myhome">
+        <a class="blue-hover" href="/minecraft/tutorials/myhome">
             <img src="{{asset('images/plugin-logos/myhome.png')}}">
             <h3>MyHome</h3>
             <p>Teleportation</p>
